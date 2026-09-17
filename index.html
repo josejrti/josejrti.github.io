@@ -3,29 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout</title>
+    <title>José Júnior Desenvolvedor</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="grid-rows-3 bg-sky-950">
-    <header>
-        <h1 class="text-5xl text-center text-sky-400 font-bold">José Júnior</h1>
-        <nav>
+    <header class="grid-columns-2 grid-rows-2 grid-cols-[auto_500px] grid [grid-template-areas:'img_txt1'_'img_txt2'_'nav_nav'] justify-center p-8">
+        <p class="text-[40px] text-left text-sky-300 font-bold [grid-area:txt1] pt-3">Olá, me chamo José Silvestre da Silva Júnior.</p>
+        <img src="image.jpg" alt="Foto José Júnior" class="[grid-area:img] w-55 h-55 border-sky-600 mr-5 border-4 rounded-full">
+        <p class="text-[15px] text-left text-sky-400 font-bold [grid-area:txt2] pt-5">Sou Estudante de Análise e Desenvolvimento de Sistemas no Instituto Federal de Pernambuco (IFPE) - Campus Palmares.</p>
+        <nav class="[grid-area:nav]">
+            <ul class="flex justify-center">
+                <li class="pr-5"><a href="#projects" title="Projetos" class="bg-sky-500 hover:bg-sky-400 p-3 text-[15px] rounded-full font-bold">Projetos</a></li>
+                <li class="pr-5"><a href="#technologies" title="Tecnologias" class="bg-sky-500 hover:bg-sky-400 p-3 text-[15px] rounded-full font-bold">Tecnologias</a></li>
+                <li><a href="mailto:jssj2@discente.ifpe.edu.br" title="Contato" class="bg-sky-500 hover:bg-sky-400 p-3 text-[15px] rounded-full font-bold">Contato</a></li>
+            </ul>
         </nav>
-        <p class="text-2xl text-center text-sky-500 font-bold">Me chamo José Silvestre da silva Júnior.</p>
-        <p class="text-2xl text-center text-sky-500 font-bold">Sou estudante da área de Tecnologia da Informação no Instituto Federal de Pernambuco (IFPE) - Campus Palmares.</p>
-        <p class="text-2xl text-center text-sky-400 font-bold">Tenho interesse em Programação, Desenvolvimento De Software, Algoritmos, Inteligência Artificial e Linux.</p>
-        <p class="text-2xl text-center text-sky-400 font-bold">Atualmente, estou desenvolvendo projetos para colocar meus conhecimentos em prática.</p>
     </header>
-    <main>
-        <section>
-            <h2 class="text-4xl text-center text-sky-400 font-bold">Meus Projetos</h2>
+    <main class="flex flex-col items-center">
+        <section class="w-150 p-5">
+            <h2 class="text-4xl text-center text-sky-300 font-bold">Sobre Mim</h2>
+            <p class="text-2xl text-left text-sky-400 font-bold pt-5">Aprendendo e Desenvolvendo Projetos.</p>
+            <p class="text-2xl text-left text-sky-400 font-bold pt-5">Estudando Algoritmos e Estruturas de Dados.</p>
+            <p class="text-2xl text-left text-sky-400 font-bold pt-5">Estudando Programação Orientada a Objetos.</p>
+            <p class="text-2xl text-left text-sky-400 font-bold pt-5">Estudando Desenvolvimento Web.</p>
+            <p class="text-2xl text-left text-sky-400 font-bold pt-5">Estudando Banco de Dados.</p>
+            <p class="text-2xl text-left text-sky-400 font-bold pt-5">Explorando IA e Machine Learning.</p>
+            <p class="text-2xl text-left text-sky-400 font-bold pt-5">Usuário de Arch Linux.</p>
         </section>
-        <section>
-            <h2 class="text-4xl text-center text-sky-400 font-bold">Tecnologias</h2>
+        <section class="flex flex-col items-center p-5">
+            <h2 class="text-4xl text-center text-sky-300 font-bold" id="projects">Meus Projetos</h2>
+            <a href="https://github.com/josejrti/projetos-para-portfolio/tree/main/calculadora-simples" target="_blank" class="text-3xl text-sky-400 hover:text-sky-500 font-bold mt-7">Calculadora</a>
+            <p class="text-1xl font-bold text-sky-500">Projeto de Calculadora simples com HTML, CSS, JS.</p>
+            <a href="https://github.com/josejrti/projetos-para-portfolio/tree/main/gerador-de-senhas" target="_blank" class="text-3xl text-sky-400 hover:text-sky-500 font-bold mt-7">Gerador de Senhas</a>
+            <p class="text-1xl font-bold text-sky-500">Projeto de Gerador de Senhas com HTML, CSS, JS.</p>
+            <a href="https://github.com/josejrti/projetos-para-portfolio/tree/main/calculadora-imc" target="_blank" class="text-3xl text-sky-400 hover:text-sky-500 font-bold mt-7">Calculadora de IMC</a>
+            <p class="text-1xl font-bold text-sky-500">Projeto de Calculadora de IMC com HTML, CSS, JS.</p>
+            <a href="https://github.com/josejrti/PythonParaIniciantes" target="_blank" class="text-3xl text-sky-400 hover:text-sky-500 font-bold mt-7">Python para Iniciantes</a>
+            <p class="text-1xl font-bold text-sky-500">Repositório no Github com Algoritmos para auxiliar iniciantes na Programação.</p>
+            <a href="https://github.com/josejrti/projetos-para-portfolio/tree/main/data-e-hora" target="_blank" class="text-3xl text-sky-400 hover:text-sky-500 font-bold mt-7">Data e Hora</a>
+            <p class="text-1xl font-bold text-sky-500">Projeto de Website que exibe a Data e a Hora atuais.</p>
+            <a href="https://github.com/josejrti/projetos-para-portfolio/tree/main/galeria-de-imagens" target="_blank" class="text-3xl text-sky-400 hover:text-sky-500 font-bold mt-7">Galeria de imagens</a>
+            <p class="text-1xl font-bold text-sky-500">Projeto de Website de galeria de imagens.</p>
+            <a href="https://github.com/josejrti/UsoSeguroDaInternet" target="_blank" class="text-3xl text-sky-400 hover:text-sky-500 font-bold mt-7">Uso Seguro da Internet</a>
+            <p class="text-1xl font-bold text-sky-500">Projeto de Website para curso de Segurança da Informação.</p>
+        </section>
+        <section class="flex flex-col items-center p-5" id="technologies">
+            <h2 class="text-4xl text-center text-sky-300 font-bold mb-5">Tecnologias</h2>
+            <img src="https://skillicons.dev/icons?i=python,java,js,html,css,tailwind&theme=light" class="pb-5" alt="Tecnologias">
+            <img src="https://skillicons.dev/icons?i=git,github,linux,arch,bash&theme=light" class="pb-5" alt="Tecnologias">
+            <img src="https://skillicons.dev/icons?i=vscode,eclipse,vim,figma&theme=light" class="pb-5" alt="Tecnologias">
         </section>
     </main>
-    <footer>
-        <p></p>
+    <footer class="bg-sky-900 p-5">
+        <p class="text-center text-sm tracking-wider font-bold"><a href="https://github.com/josejrti" target="_blank">José Júnior</a> Desenvolvedor | 2026</p>
     </footer>
 </body>
 </html>
